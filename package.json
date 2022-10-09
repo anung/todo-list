@@ -1,0 +1,37 @@
+{
+  "name": "todo-apps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"sequelize-cli db:migrate\" \"node index.js\"",
+    "dev": "nodemon index.js",
+    "format:write": "prettier --write .",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "migrate-db": "sequelize-cli db:migrate"
+  },
+  "keywords": [],
+  "author": "Akhmad Maknur",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.14",
+    "@types/sequelize": "^4.28.14",
+    "compression": "^1.7.4",
+    "concurrently": "^7.4.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "joi": "^17.6.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.24.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.5.0",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1",
+    "sequelize-cli": "^6.5.1"
+  }
+}
